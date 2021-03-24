@@ -4,6 +4,10 @@ let input = document.querySelector('#prix');
 let error = document.querySelector('small');
 let formulaire = document.querySelector('#formulaire');
 
+// Jouer un son
+
+let audioApplause = document.getElementById('applause');
+
 // Cacher l'erreur
 
 error.style.display = "none";
@@ -42,6 +46,7 @@ function verifier(nombre) {
         instruction.textContent = "#" + coups + " ( " + nombre +  " ) " + 
         "Félicitation vous avez trouvé le juste prix ! 😍";
         instruction.className = 'instruction fini';
+        audioApplause.play();
 
     }
 

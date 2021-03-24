@@ -49,3 +49,7 @@ html, body {
   .text-danger {
     font-weight: bold;
   }
+
+  audio {
+    display: none;
+  }
