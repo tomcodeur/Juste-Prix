@@ -47,6 +47,7 @@ function verifier(nombre) {
         "Félicitation vous avez trouvé le juste prix ! 😍";
         instruction.className = 'instruction fini';
         audioApplause.play();
+        input.disabled = true;
 
     }
 
